@@ -1,0 +1,137 @@
+body {
+  background-color: #f9e4dc;
+}
+* {
+  margin: 0;
+}
+.bigguy {
+  display: contents;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+}
+.jupijej {
+  border: solid;
+  display: flex;
+  height: 170px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-self: center;
+  background-color: aliceblue;
+  left: 0;
+  right: 0;
+  min-height: fit-content;
+  width: 50vw;
+  min-width: 45vh;
+  margin: 10% auto 10% auto; /*top right bottom left*/
+  padding: 10px;
+  border-radius: 10px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  margin-left: 10px;
+  color: #833a3a;
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.prep {
+  display: block;
+  min-width: 10%;
+  background-color: #fbeaf4;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  font-style: italic;
+  padding: 15px;
+}
+li {
+  color: #833a3a;
+  padding: 3px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+h2 {
+  color: #b02270;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-left: 15px;
+}
+hr {
+  margin-top: 10px;
+  border: 0.5px solid #ddd;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+}
+li span {
+  color: rgb(94, 78, 78);
+}
+.Ingredients {
+  margin-top: 15px;
+}
+.li {
+  color: rgb(171, 60, 60);
+  list-style: decimal;
+  font: 16px Fantasy;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.li span {
+  color: rgb(94, 78, 78);
+  font-size: medium;
+  font-family: serif;
+  display: inline;
+}
+h3 {
+  padding-left: 15px;
+  padding-top: 10px;
+  font: 1em sans-serif;
+}
+h5 {
+  font-size: small;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  /* align-items: center; */
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 90%;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 7px;
+  border-bottom: 2px solid #ddd;
+}
+.section:last-child {
+  border-bottom: none;
+}
+.values {
+  color: #b03030;
+  margin-right: 30%;
+  min-width: 50px;
+}
