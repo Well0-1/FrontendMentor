@@ -16,6 +16,7 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 15px;
+  overflow: hidden;
 }
 .left {
   height: 500px;
@@ -23,7 +24,6 @@ body {
 .img {
   height: 500px;
   width: 350px;
-  border-radius: 15px 0px 0px 15px;
 }
 .right {
   height: 500px;
