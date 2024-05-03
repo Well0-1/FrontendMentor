@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="font-bold" href="assets/fonts/Poppins-ExtraBold.ttf" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input:invalid {
+        border-color: red;
+      }
+      @font-face {
+        font-family: "Poppins-ExtraBoldItalic";
+        src: url("/AgeCalculator/assets/fonts/Poppins-ExtraBoldItalic.ttf")
+          format("truetype");
+      }
+      .font-poppinsbolditalic {
+        font-family: "Poppins-ExtraBoldItalic", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-slate-100 flex flex-col justify-center items-center">
+    <div
+      class="h-2/3 w-5/12 min-w-[600px] rounded-2xl rounded-br-[200px] p-4 bg-white"
+    >
+      <form>
+        <div class="flex flex-row">
+          <div class="flex flex-col p-7 pr-2">
+            <label
+              class="flex w-fit tracking-widest font-bold text-xs text-slate-500 p-1 pl-0"
+              for="input"
+              >DAY</label
+            >
+            <input
+              class="w-28 h-12 p-4 rounded-md font-bold text-2xl border border-slate-300"
+              id="day"
+              type="number"
+              placeholder="DD"
+            />
+            <span
+              class="w-32 p-1 pb-0 text-[11px] text-red-700"
+              id="error-dd"
+            ></span>
+          </div>
+          <div class="flex w-fit flex-col p-7 pr-2">
+            <label
+              class="tracking-widest font-bold text-xs text-slate-500 p-1 pl-0"
+              for="input"
+              >MONTH</label
+            >
+            <input
+              class="w-28 h-12 p-4 font-bold text-2xl rounded-md border border-slate-300"
+              id="month"
+              type="number"
+              placeholder="MM"
+              min="1"
+              max="12"
+            />
+            <span
+              class="w-32 p-1 pb-0 text-[11px] text-red-700"
+              id="error-mm"
+            ></span>
+          </div>
+          <div class="flex flex-col p-7 pr-2">
+            <label
+              class="tracking-widest font-bold text-xs text-slate-500 p-1 pl-0"
+              for="input"
+              >YEAR</label
+            >
+            <input
+              class="w-28 h-12 p-4 font-bold text-2xl rounded-md border border-slate-300"
+              id="year"
+              type="number"
+              placeholder="YYYY"
+              max="275760"
+            />
+            <span
+              class="w-32 p-1 pb-0 text-[11px] text-red-700"
+              id="error-yy"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-row items-center h-2">
+          <hr class="bg-slate-300 w-full h-0.5 rounded-2xl" />
+          <button type="button" class="rounded-full" onclick="calc()">
+            <img
+              class="w-20 h-fit bg-purple-600 rounded-full p-4"
+              src="assets/images/icon-arrow.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </form>
+      <div class="flex flex-col justify-center font-poppinsbolditalic">
+        <h1 class="text-[5rem] font-bold pl-7">
+          <span class="text-purple-600 pr-2 font-extrabold" id="years">--</span
+          >years
+        </h1>
+        <h1 class="text-[5rem] font-bold pl-7">
+          <span class="text-purple-600 pr-2 font-extrabold" id="months">--</span
+          >months
+        </h1>
+        <h1 class="text-[5rem] font-bold pl-7">
+          <span class="text-purple-600 pr-2 font-extrabold" id="days">--</span
+          >days
+        </h1>
+      </div>
+    </div>
+
+    <div class="text-center text-[11px] pt-2">
+      Challenge by
+      <a
+        class="text-[#5273FA]"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="text-[#5273FA]"
+        href="https://www.github.com/Well0-1"
+        target="_blank"
+        >Swaginman</a
+      >.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
