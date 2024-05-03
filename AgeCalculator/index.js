@@ -30,7 +30,7 @@ calc = () => {
     } else {
       monthsOld.textContent = monthDiff % 12;
       daysOld.textContent = dayDiff % 29;
-      if (bMonth.value - (current.getMonth() + 1) > 0) {
+      if (bMonth.value - (current.getMonth() + 1) >= 0) {
         yearsOld.textContent = yearDiff - 1;
       } else {
         yearsOld.textContent = yearDiff;
